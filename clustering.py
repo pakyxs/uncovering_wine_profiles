@@ -9,7 +9,7 @@ import requests
 
 def clustering():
     # Retrieve wine data from API
-    response = requests.get('http://localhost:5000/wine-data')
+    response = requests.get('http://172.17.0.2:5000/wine-data')
     df = pd.read_json(response.text)
     
     # Standardize the features
