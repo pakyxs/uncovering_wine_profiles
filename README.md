@@ -62,15 +62,19 @@ Follow the instructions below to run the analysis pipeline:
     docker run -p 5000:5000 wine-clustering
     ```
 
-4. **Execute the Analysis**:
+4. **Access Wine Data**:
 
+    Copy on your browser:
     ```bash
-    python clustering.py
+    127.0.0.1:5000/wine-data
     ```
 
-5. **Access Results**:
+5. **Access Clustering Results**:
 
-    The results of the analysis will be printed to the terminal.
+    Copy on your browser:
+    ```bash
+    127.0.0.1:5000/clustering
+    ```
 
 ### Files
 
