@@ -4,9 +4,8 @@ This repository contains a Dockerized analysis pipeline for clustering wine data
 
 ## Overview
 - Data Description
-- Data Analysis
-- Model development
 - Usage
+- Endpoints
 - Files
 - Dependencies
 - Credits
@@ -62,27 +61,49 @@ Follow the instructions below to run the analysis pipeline:
     docker run -p 5000:5000 wine-clustering
     ```
 
-4. **Access Wine Data**:
+### Endpoints
 
-    Copy on your browser:
+1. **Access Wine Data**:
+
+    To access raw DataFrame, copy on your browser:
     ```bash
     127.0.0.1:5000/wine-data
     ```
 
-5. **Access Clustering Results**:
+2. **Access Clustering DataFrame Results**:
 
-    Copy on your browser:
+    To access DataFrame with the type of wine identified, copy on your browser:
     ```bash
     127.0.0.1:5000/clustering
     ```
 
+3. **Access Elbow Method Visual**:
+
+    To access Elbow Method visual to identify the optimal number of cluster, copy on your browser:
+    ```bash
+    127.0.0.1:5000/visual-before-pca
+    ```
+
+4. **Access Clustering Visual Before PCA**:
+
+    To access Clustering Visual Before PCA, copy on your browser:
+    ```bash
+    127.0.0.1:5000/visual-before-pca
+    ```
+5. **Access Clustering Visual After PCA**:
+
+    To access Clustering Visual After PCA, copy on your browser:
+    ```bash
+    127.0.0.1:5000/visual-after-pca
+    ```
+
 ### Files
 
-- `Notebooks`: Contains notebooks with the data analysis and ML model.
+- `notebooks`: Contains notebooks with the data analysis and ML model.
+- `templates`: Contains HTML template for the endpoints.
 - `Dockerfile`: Contains instructions for building the Docker image.
 - `requirements.txt`: Lists the dependencies required for the analysis.
 - `app.py`: Flask API for serving the wine dataset.
-- `clustering.py`: Python script for data clustering.
 - `README.md`: Instructions for running the analysis pipeline.
 
 ### Dependencies
