@@ -81,7 +81,7 @@ Follow the instructions below to run the analysis pipeline:
 
     To access Elbow Method visual to identify the optimal number of cluster, copy on your browser:
     ```bash
-    127.0.0.1:5000/visual-before-pca
+    127.0.0.1:5000/elbow-method
     ```
 
 4. **Access Clustering Visual Before PCA**:
